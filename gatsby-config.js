@@ -24,7 +24,7 @@ if (!spaceId || !accessToken) {
 // starter config
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Landing Page",
+    title: "IntelliJams",
     description:
       "Create custom landing pages using Gatsby and Contentful with this Gatsby Starter",
   },
@@ -36,7 +36,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Landing Page`,
+        name: `IntelliJams`,
         short_name: `Gatsby Starter Landing Page`,
         start_url: `/`,
         background_color: `#fff`,
