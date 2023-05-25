@@ -29,14 +29,13 @@ export default function Features({ heading, secondaryHeading, content }) {
 function Feature({
   primaryText,
   secondaryText,
-  image,
   links,
   orientation = "default",
 }) {
   const orientationStyle = orientation === "default" ? "" : styles.reverse;
 
   return (
-    <div className={`${styles.featureContainer} ${orientationStyle}`}>
+    <div className={`${styles.featureContainer} "default"`}>
       <div className={styles.copyColumn}>
         <div className={styles.copyContainer}>
           <MarkdownText
@@ -49,12 +48,6 @@ function Feature({
             {links && links.map((link) => <Link key={link.id} {...link} />)}
           </LinkContainer>
         </div>
-      </div>
-      <div className={styles.imageColumn}>
-        <GatsbyImage
-          image={getImage(image)}
-          alt={image.title || getText(primaryText)}
-        />
       </div>
     </div>
   );

@@ -21,6 +21,7 @@
 
 .header {
   composes: container;
+  background-color: orange;
 }
 
 .header a {
@@ -42,6 +43,7 @@
   composes: container;
   display: flex;
   gap: var(--space-3);
+  background-color: orange;
 }
 
 .footer a {

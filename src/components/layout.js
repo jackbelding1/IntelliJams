@@ -14,11 +14,9 @@ export default function Layout(props) {
       </header>
       <main className={styles.main}>{props.children}</main>
       <footer className={styles.footer}>
-        <a href="https://gatsbyjs.com">Built with Gatsby</a>
-        <a href="https://github.com/gatsbyjs/gatsby-starter-landing-page">
-          View Source on GitHub
-        </a>
-        <Link to="/demo">Demo</Link>
+        <a href="/">© 2023 by IntelliJams</a>
+        <a href="https://www.facebook.com/intellijams/">Facebook</a>
+        <a href="https://www.instagram.com/intellijams/">Instagram</a>
       </footer>
     </div>
   );
