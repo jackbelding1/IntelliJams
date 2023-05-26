@@ -20,6 +20,7 @@
 }
 
 .header {
+  background-color: white;
   composes: container;
   position: fixed;
   z-index: 12;
@@ -38,7 +39,7 @@
 
 .main {
   flex: 1 0 auto;
-  padding-top: 120px;
+  padding-top: 94px;
 }
 
 .footer {
