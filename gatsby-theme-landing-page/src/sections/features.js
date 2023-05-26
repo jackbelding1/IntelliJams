@@ -10,8 +10,10 @@ import Heading from "../components/heading";
 export default function Features({ heading, secondaryHeading, content }) {
   return (
     <Section>
-      <Heading center>{heading}</Heading>
-      <Heading secondary center>
+      <Heading center banner bannerHeading>
+        {heading}
+      </Heading>
+      <Heading secondary center banner>
         {secondaryHeading}
       </Heading>
       <div className={styles.content}>
