@@ -12,24 +12,32 @@
   /* these values can be replaced with starter-specific css vars */
   margin-left: auto;
   margin-right: auto;
-  max-width: 1280px;
+  max-width: 100%;
   padding-left: 32px;
   padding-right: 32px;
-  padding-top: 40px;
-  padding-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+}
+
+.container h2 {
+  display: inline;
 }
 
 .header {
-  background-color: white;
   composes: container;
-  position: fixed;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid black;
   z-index: 12;
 }
 
 .header a {
   text-decoration: none;
   font-weight: bold;
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-2);
   color: inherit;
 }
 .header a:hover,
@@ -39,7 +47,6 @@
 
 .main {
   flex: 1 0 auto;
-  padding-top: 94px;
 }
 
 .footer {
@@ -47,6 +54,7 @@
   display: flex;
   gap: var(--space-3);
   background-color: rgb(38, 37, 37);
+  min-height: 80px;
 }
 
 .footer a {
@@ -54,10 +62,18 @@
   font-weight: bold;
   font-size: var(--font-size-2);
   color: white;
+  padding-top: 10px;
 }
 
 .footer a:hover,
 .footer a:focus {
   text-decoration: underline;
   color: var(--link-hover-color);
+}
+img {
+  max-width: 100%;
+}
+.text {
+  font-size: 20px;
+  padding-left: 20px;
 }
