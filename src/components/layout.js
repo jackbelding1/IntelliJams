@@ -31,7 +31,7 @@ export default function Layout(props) {
             </a>
           </div>
           <div class="text">
-            <a href="inquiries@intellijams.io">
+            <a href="mailto:inquiries@intellijams.io">
               <h2>Contact</h2>
             </a>
           </div>
