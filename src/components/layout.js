@@ -10,7 +10,41 @@ export default function Layout(props) {
     <div className={[cssVars.root, styles.root].join(" ")}>
       <Head {...props} />
       <header className={styles.header}>
-        <Link to="/">gatsby-starter-landing-page</Link>
+        <div class="image">
+          <a href="/">
+            <img
+              src="https://drive.google.com/uc?id=1mlQHdoI3Z6JxdyHreyDn_JJKosfIVFmU"
+              alt="icon"
+              width="80"
+            />
+          </a>
+        </div>
+        <div class="image">
+          <a href="/">
+            <img
+              src="https://drive.google.com/uc?id=1OtAwIRTydLPs6lIiz8FPSHttD4-_6eDl"
+              alt="logo"
+              width="80"
+            />
+          </a>
+        </div>
+        <div class="container">
+          <div class="text">
+            <a href="/">
+              <h2>Home</h2>
+            </a>
+          </div>
+          <div class="text">
+            <a href="/demo">
+              <h2>Products</h2>
+            </a>
+          </div>
+          <div class="text">
+            <a href="inquiries@intellijams.io">
+              <h2>Contact</h2>
+            </a>
+          </div>
+        </div>
       </header>
       <main className={styles.main}>{props.children}</main>
       <footer className={styles.footer}>
