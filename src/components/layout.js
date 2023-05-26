@@ -13,7 +13,7 @@ export default function Layout(props) {
         <div class="image">
           <a href="/">
             <img
-              src="https://drive.google.com/uc?id=1aqCkd8CLvo_I_MKLo8-YzkEglAakBgLQ"
+              src="https://drive.google.com/uc?id=1AkMqPlsmLvqkEZqMxZ1W3N4BP-ZiaJdV"
               alt="icon"
               width="400"
             />
