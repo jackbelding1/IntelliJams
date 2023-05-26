@@ -19,15 +19,6 @@ export default function Layout(props) {
             />
           </a>
         </div>
-        <div class="image">
-          <a href="/">
-            <img
-              src="https://drive.google.com/uc?id=1OtAwIRTydLPs6lIiz8FPSHttD4-_6eDl"
-              alt="logo"
-              width="80"
-            />
-          </a>
-        </div>
         <div class="container">
           <div class="text">
             <a href="/">
