@@ -5,10 +5,20 @@
   padding-left: 0;
 }
 
+.banner {
+  font-size: 80px;
+  background-color: #ffbd59;
+}
+
+.bannerHeading {
+  padding-top: 90px;
+}
+
 .secondary {
   font-size: var(--font-size-4);
   font-weight: var(--font-weight-normal);
   color: var(--text-color-secondary);
+  padding-bottom: 150px;
 }
 
 .center {

@@ -6,6 +6,8 @@ export default function Heading({
   as,
   secondary,
   center,
+  banner,
+  bannerHeading,
   className = "",
   ...rest
 }) {
@@ -15,6 +17,8 @@ export default function Heading({
   if (className) classNames.push(className);
   if (secondary) classNames.push(styles.secondary);
   if (center) classNames.push(styles.center);
+  if (banner) classNames.push(styles.banner);
+  if (bannerHeading) classNames.push(styles.bannerHeading);
 
   /*
    Uses `as` prop for heading element. If not provided, defaults to

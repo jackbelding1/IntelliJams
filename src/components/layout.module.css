@@ -20,8 +20,8 @@
 }
 
 .header {
+  background-color: white;
   composes: container;
-  background-color: orange;
   position: fixed;
   z-index: 12;
 }
@@ -39,21 +39,21 @@
 
 .main {
   flex: 1 0 auto;
-  padding-top: 120px;
+  padding-top: 94px;
 }
 
 .footer {
   composes: container;
   display: flex;
   gap: var(--space-3);
-  background-color: orange;
+  background-color: rgb(38, 37, 37);
 }
 
 .footer a {
   text-decoration: none;
   font-weight: bold;
   font-size: var(--font-size-2);
-  color: inherit;
+  color: white;
 }
 
 .footer a:hover,
