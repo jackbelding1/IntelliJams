@@ -10,24 +10,49 @@ export default function Hero({ heading, secondaryHeading, content }) {
   const heroContent = content?.[0];
   const image = getImage(heroContent?.image);
 
-  return (
-    <Section>
-      <div className={styles.root}>
-        <div className={styles.content}>
-          <Heading as="h2" className={styles.secondaryHeading}>
-            {secondaryHeading}
-          </Heading>
-          <Heading as="h1" className={styles.heading}>
-            {heading}
-          </Heading>
-          <HeroContent {...heroContent} />
+  return heading == "Algorhythm" ? <Algorhythm /> : <AlpineMusic />;
+
+  function AlpineMusic() {
+    return (
+      <Section>
+        <div className={styles.root}>
+          <div className={styles.image}>
+            <GatsbyImage image={image} alt={image.title || `Hero Image`} />
+          </div>
+          <div className={styles.content}>
+            <Heading as="h2" className={styles.secondaryHeading}>
+              {secondaryHeading}
+            </Heading>
+            <Heading as="h1" className={styles.heading}>
+              {heading}
+            </Heading>
+            <HeroContent {...heroContent} />
+          </div>
         </div>
-        <div className={styles.image}>
-          <GatsbyImage image={image} alt={image.title || `Hero Image`} />
+      </Section>
+    );
+  }
+
+  function Algorhythm() {
+    return (
+      <Section>
+        <div className={styles.root2}>
+          <div className={styles.content}>
+            <Heading as="h2" className={styles.secondaryHeading}>
+              {secondaryHeading}
+            </Heading>
+            <Heading as="h1" className={styles.heading}>
+              {heading}
+            </Heading>
+            <HeroContent {...heroContent} />
+          </div>
+          <div className={styles.image}>
+            <GatsbyImage image={image} alt={image.title || `Hero Image`} />
+          </div>
         </div>
-      </div>
-    </Section>
-  );
+      </Section>
+    );
+  }
 }
 
 function HeroContent({ primaryText, secondaryText, links }) {
