@@ -13,9 +13,9 @@ export default function Layout(props) {
         <div class="image">
           <a href="/">
             <img
-              src="https://drive.google.com/uc?id=1mlQHdoI3Z6JxdyHreyDn_JJKosfIVFmU"
+              src="https://drive.google.com/uc?id=1aqCkd8CLvo_I_MKLo8-YzkEglAakBgLQ"
               alt="icon"
-              width="80"
+              width="400"
             />
           </a>
         </div>
