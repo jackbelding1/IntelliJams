@@ -30,7 +30,6 @@ function CopyContent({ primaryText, secondaryText, image }) {
         alt={image.title || getText(primaryText)}
       />
       <MarkdownText {...primaryText} />
-      <AsideText {...secondaryText} />
     </Container>
   );
 }
