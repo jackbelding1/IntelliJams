@@ -7,6 +7,37 @@
   font-family: "Inter", system-ui, sans-serif;
 }
 
+/* Hide the links inside the navigation menu (except for logo/home) */
+.myLinks {
+  padding-left: 42px;
+  padding-right: 42px;
+  display: none;
+  border-top-style: solid;
+  border-color: black;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.myLinks a {
+  display: block;
+  padding: 5px;
+  color: black;
+}
+
+.myLinks a:hover,
+.myLinks a:focus {
+  color: var(--link-hover-color);
+}
+
+/* Style the hamburger menu */
+.header a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .container {
   width: 100%;
   /* these values can be replaced with starter-specific css vars */
@@ -30,15 +61,17 @@
   composes: container;
   width: 100%;
   background-color: white;
-  border-bottom: 1px solid black;
   z-index: 12;
+  overflow: hidden;
+  position: relative;
 }
 
 .header a {
   text-decoration: none;
   font-weight: bold;
-  font-size: var(--font-size-2);
+  font-size: 58px;
   color: inherit;
+  display: block;
 }
 .header a:hover,
 .header a:focus {
