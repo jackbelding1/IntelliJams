@@ -47,7 +47,7 @@ export default function Layout(props) {
       <div className={styles.myLinks} id="myLinks">
         <a href="/">Home</a>
         <a href="mailto:inquiries@intellijams.io">Contact</a>
-        <a href="/demo">Products</a>
+        <a href="/products">Products</a>
       </div>
       <main className={styles.main}>{props.children}</main>
       <footer className={styles.footer}>
